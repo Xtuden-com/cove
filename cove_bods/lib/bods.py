@@ -6,4 +6,4 @@ import cove.lib.tools as tools
 from cove.lib.common import common_checks_context, get_orgids_prefixes
 
 def common_checks_bods(context, upload_dir, json_data, schema_obj):
-    pass
+    return context
