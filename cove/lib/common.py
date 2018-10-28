@@ -362,8 +362,13 @@ def get_counts_additional_fields(json_data, schema_obj, schema_name, context, fi
         # to make results less verbose
         if not parent_field or parent_field in schema_fields:
             if fields_regex:
-                if LANGUAGE_RE.search(field.split('/')[-1]):
-                    continue
+                match = LANGUAGE_RE.search(field.split('/')[-1])
+                if match:
+                    field_prefix = match.string.rsplit('_', 1)[0]
+                    # Check it's actually a field in the schema which has been suffixed with
+                    # a language tag and not something else with an underscore
+                    if parent_field + '/' + field_prefix in schema_fields:
+                        continue
             data_only.add(field)
 
     return [('/'.join(key.split('/')[:-1]), key.split('/')[-1], fields_present[key]) for key in data_only]
