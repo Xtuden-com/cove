@@ -60,7 +60,7 @@ lxml==4.3.0
 MarkupSafe==1.0
 mccabe==0.6.1
 more-itertools==4.1.0
-openpyxl==2.6.1
+-e hg+https://bitbucket.org/openpyxl/openpyxl@dc625c80ced6788b432bf623a8e1dddc4d91d2e9#egg=openpyxl
 packaging==17.1
 
 pluggy==0.6.0
