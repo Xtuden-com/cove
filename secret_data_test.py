@@ -154,6 +154,6 @@ for dirname in os.listdir('.'):
     expected_path = os.path.join('..', '..', 'secret_data_test_archive', '360', dirname, 'validation_errors.json')
     actual_path = os.path.join(dirname, 'validation_errors.json')
     with open(actual_path) as fp, open(expected_path) as fp_archive:
-        actual_data = json.load(fp)
-        expected_data = json.load(fp_archive)
+        actual_data = make_ocds_validation_errors_comparable(json.load(fp))
+        expected_data = make_ocds_validation_errors_comparable(json.load(fp_archive))
         assert actual_data == expected_data
