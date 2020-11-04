@@ -46,7 +46,7 @@ def test_accordion(server_url, browser):
     browser.find_element_by_partial_link_text('Paste').click()
     time.sleep(0.5)
     assert buttons() == [False, False, True]
-    assert 'Paste (XML only)' in browser.find_elements_by_tag_name('label')[2].text
+    assert 'Paste (DOGS only)' in browser.find_elements_by_tag_name('label')[2].text
 
     # Now test that the whole banner is clickable
     browser.find_element_by_id('headingOne').click()
