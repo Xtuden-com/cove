@@ -1,5 +1,6 @@
 import sys
 import os
+import json
 import environ
 if "pytest" not in sys.modules:
     # Check that we can import defusedexpat, as this will protect us against

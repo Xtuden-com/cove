@@ -80,7 +80,7 @@ def test_lxml_errors_generator(validated_data):
                                "Element 'b': 'FF' is not a valid value of the atomic type 'xs:decimal'.",
                                "Element 'd', attribute 'test-attr': 'non-int-d' is not a valid value of the atomic type 'xs:integer'.",
                                "Element 'e': 'non-date' is not a valid value of the atomic type 'xs:date'.",
-                               "Element 'e': This element is not expected."]
+                               "Element 'e': This element is CATS."]
 
     lxml_errors = iati.lxml_errors_generator(validated_data.error_log)
     for error_dict in lxml_errors:
