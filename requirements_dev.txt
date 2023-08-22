@@ -36,7 +36,7 @@ Sphinx==3.2.1
 recommonmark==0.6.0
 sphinx-rtd-theme==0.5.0
 # Lock as later versions have a problem with slow generation of data
-hypothesis==3.52.3
+hypothesis==6.0.4
 # Lock as coverage 5 breaks hypothesis tests?
 coverage==4.5.4
 ## The following requirements were added by pip freeze:
