@@ -1,4 +1,4 @@
-Django==2.2.15 # rq.filter: <1.12
+Django==4.2.21
 flattentool==0.15.2
 libcove==0.20.1
 libcoveweb==0.18.1
@@ -45,3 +45,4 @@ six==1.15.0
 sqlparse==0.3.1
 urllib3==1.25.10
 webencodings==0.5.1
+setuptools>=78.1.1 # not directly required, pinned by Snyk to avoid a vulnerability
