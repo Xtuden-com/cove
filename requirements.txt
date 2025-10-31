@@ -1,9 +1,9 @@
-Django==2.2.15 # rq.filter: <1.12
+Django==4.2.24 # rq.filter: <1.12
 flattentool==0.15.2
 libcove==0.20.1
 libcoveweb==0.18.1
 django-bootstrap3==12.1.0
-django-debug-toolbar==2.2
+django-debug-toolbar==2.2.1
 requests==2.24.0
 cached-property==1.5.1
 dealer==2.1.0
@@ -42,6 +42,6 @@ pytz==2020.1
 schema==0.7.3
 sentry-sdk==0.16.5
 six==1.15.0
-sqlparse==0.3.1
+sqlparse==0.5.0
 urllib3==1.25.10
 webencodings==0.5.1
